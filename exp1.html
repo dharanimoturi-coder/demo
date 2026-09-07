@@ -1,0 +1,126 @@
+<!DOC TYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF"-8">
+<title>Event Registration Form</title>
+<style>
+
+body{
+
+font-Family:Arial,sans-serif;
+
+background:red;
+
+display:flex;
+
+justify-content:center;
+
+padding:50px;
+
+}
+
+Form{
+
+background:white;
+
+padding:20px 30px;
+
+border-radius:10px;
+
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+
+width:300px;
+
+}
+
+input,select,textarea{
+
+width:100%;
+
+padding:10px;
+
+margin-top:10px;
+
+marign-bottom:15px;
+
+border:1px solid #ccc;
+
+border-radius:5px;
+
+}
+
+button{
+
+background:#4CAF50;
+
+color:white;
+
+padding:10px;
+
+border:none;
+
+border-radius:5px;
+
+cursor:pointer;
+
+width:100%;
+
+}
+
+button:hower{
+
+background:#45a049;
+
+}
+
+h2{
+
+text-align:center;
+
+}
+</style>
+
+</head>
+
+<body>
+
+<form action="/abc/login.html"method+"POST">
+
+<h2>Event Registration</h2>
+
+<label for="name">full Name</label>
+
+<input type="text"id="name"name="name" 
+pattern ="[A-Z][a-z]+"placeholder="enter your full name" required><br>
+
+<label for="email">Email Address</label>
+
+<input type="email" id="email" name="email" required><br>
+
+<label for="phone">phonenumber</label>
+
+<input type="tel" id= "phone"name="phone" 
+pattern ="[7-9][0-9]{9}"maxlength="10"
+minlength="10" required><br>
+
+<label for="event">choose event</label>
+<select id="event"name="event"required>
+<option value='' ">--please select--</option>
+<option value="coding">coding contest</option>
+<option value="debate">Debate</option>
+<option value="music">music show</option>
+</select><br>
+<button type="submit">Register</button>
+</form>
+</body>
+</html>                  
+
+
+\
+
+
+
+
+
+
+
